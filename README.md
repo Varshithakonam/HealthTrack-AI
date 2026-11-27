@@ -113,6 +113,21 @@ were reviewed and tested during development.
 AI-generated suggestions were verified and
 adapted to the project requirements.
 
+AI tools were used as development assistants during this project.
+
+- **ChatGPT:** Assisted with project planning, debugging, Flask application development, HTML/CSS improvements, deployment guidance, and documentation.
+- **GitHub Copilot:** Assisted with code suggestions and development support, where applicable.
+
+### Verification and Modifications
+- Reviewed and tested the generated code.
+- Verified symptom input validation.
+- Tested machine learning predictions and confidence scores.
+- Tested CSV report downloads.
+- Tested error handling for empty symptom submissions.
+- Deployed and tested the application on Render.
+
+All project components were reviewed and tested before submission.
+
 ## Disclaimer
 
 This application is an educational demonstration
