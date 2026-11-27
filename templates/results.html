@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results | HealthTrack AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">HealthTrack <span>AI</span></div>
+
+    <div class="card">
+
+        <h1>Analysis Results</h1>
+
+        <p class="subtitle">
+            Here are the three highest-scoring model predictions.
+        </p>
+
+        {% for item in results %}
+
+        <div class="result-item">
+
+            <div class="result-heading">
+                <h3>{{ item.condition }}</h3>
+
+                <span>{{ item.confidence }}%</span>
+            </div>
+
+            <div class="progress">
+                <div class="progress-fill"
+                     data-confidence="{{ item.confidence }}">
+                </div>
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+        <a href="/save" class="button">Save Results (CSV)</a>
+
+        <a href="/" class="back-link">Analyze Again</a>
+
+        <p class="disclaimer">
+            These are experimental model scores, not medical diagnoses.
+            Please consult a healthcare professional.
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+    document.querySelectorAll('.progress-fill').forEach(bar => {
+        bar.style.width = bar.dataset.confidence + '%';
+    });
+</script>
+
+</body>
+</html>

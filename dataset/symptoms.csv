@@ -1,0 +1,31 @@
+symptoms,condition
+"fever headache body pain fatigue",Flu
+"cough fever sore throat fatigue",Flu
+"body aches chills fever headache",Flu
+"runny nose sneezing sore throat cough",Common Cold
+"sneezing nasal congestion runny nose",Common Cold
+"mild cough watery eyes sneezing",Common Cold
+"headache nausea vomiting sensitivity to light",Migraine
+"severe headache dizziness light sensitivity",Migraine
+"throbbing headache nausea fatigue",Migraine
+"stomach pain nausea vomiting diarrhea",Gastroenteritis
+"abdominal cramps diarrhea vomiting",Gastroenteritis
+"stomach cramps nausea loose stools",Gastroenteritis
+"itchy eyes sneezing runny nose congestion",Allergy
+"skin itching watery eyes sneezing",Allergy
+"nasal congestion itchy throat sneezing",Allergy
+"frequent urination excessive thirst fatigue",Diabetes
+"excessive thirst frequent urination blurred vision",Diabetes
+"unusual hunger fatigue frequent urination",Diabetes
+"fever cough headache chills",Flu
+"blocked nose sneezing mild cough",Common Cold
+"headache nausea dizziness light sensitivity",Migraine
+"abdominal pain diarrhea nausea",Gastroenteritis
+"itchy skin sneezing watery eyes",Allergy
+"excessive thirst fatigue blurred vision",Diabetes
+"fever body pain chills fatigue",Flu
+"runny nose cough sneezing",Common Cold
+"throbbing headache nausea sensitivity to light",Migraine
+"vomiting stomach pain diarrhea",Gastroenteritis
+"itchy eyes nasal congestion sneezing",Allergy
+"frequent urination thirst fatigue",Diabetes

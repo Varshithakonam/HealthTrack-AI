@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack AI</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">HealthTrack <span>AI</span></div>
+
+    <div class="card">
+
+        <h1>Understand Your Symptoms</h1>
+
+        <p class="subtitle">
+            Enter your symptoms to explore potential health conditions.
+        </p>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST">
+
+            <label for="symptoms">Describe your symptoms</label>
+
+            <textarea
+                id="symptoms"
+                name="symptoms"
+                placeholder="Example: fever, headache, fatigue..."
+                rows="5"
+            ></textarea>
+
+            <button type="submit">
+                Analyze Symptoms
+            </button>
+
+        </form>
+
+        <p class="disclaimer">
+            Educational demonstration only. This application does not
+            provide medical diagnoses. Consult a qualified healthcare
+            professional for medical advice.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+

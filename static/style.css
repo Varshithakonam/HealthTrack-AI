@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f3f6fb;
+    color: #172554;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #172554;
+    margin-bottom: 35px;
+}
+
+.logo span {
+    color: #0d9488;
+}
+
+.card {
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(30, 64, 175, 0.07);
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+textarea {
+    width: 100%;
+    padding: 17px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+    resize: vertical;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1);
+}
+
+button, .button {
+    display: inline-block;
+    width: 100%;
+    margin-top: 22px;
+    padding: 16px;
+    background: #0d9488;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover, .button:hover {
+    background: #0f766e;
+}
+
+.error {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 14px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+.disclaimer {
+    margin-top: 28px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #64748b;
+}
+
+.result-item {
+    padding: 20px;
+    margin-bottom: 18px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.result-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.result-heading h3 {
+    font-size: 17px;
+}
+
+.result-heading span {
+    color: #0d9488;
+    font-weight: 800;
+}
+
+.progress {
+    height: 9px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #0d9488;
+    border-radius: 20px;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    color: #0d9488;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
